@@ -9,3 +9,10 @@ class Factory:
 print(Factory().a)
 
 Factory().hello() 
+
+
+obj = Factory()
+
+print(obj.a)
+
+obj.hello()
