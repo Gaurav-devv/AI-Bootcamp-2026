@@ -1,7 +1,18 @@
 class Factory:
-    def _init_(self,material,zips,pockets):
+    def __init__(self,material,zips,pockets):
         self.material = material
         self.zips = zips
         self.pockets = pockets
 
-reebok = Factory("Leather,3,2")
+    def show(self):
+        print(f"your object details are {self.material}, {self.pockets}, {self.zips}")
+
+
+
+reebok = Factory("Leather",3,2)
+
+campus = Factory("nylon", 3,3)
+
+print(reebok.pockets)
+
+reebok.show()
