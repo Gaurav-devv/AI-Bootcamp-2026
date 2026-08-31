@@ -18,11 +18,39 @@ class Bank:
     except Exception as err:
         print(f"an exception  occured as {err}")
 
+
+    @staticmethod
+    def update():
+        with open(Bank.database,'w') as fs:
+            fs.write(json.dumps(Bank.data))
+
     
 
 
     def Createaccount(self):
-        pass
+        info ={
+            "Name" : input("Tell your name :-"),
+            "Age"  : int(input("Tell your age :-")),
+            "Email": input("Tell your Email :-" ),
+            "Pin"  : int(input("Tell your pin:-")),
+            "AccountNo." : 1234,
+            "Balance" : 0
+        }
+        if info['Age'] < 18 or len(str(info['Pin'])) != 4:
+            print("sorry you cannot create your account")
+
+        else:
+            print("Account has been created successfully")
+            for i in info:
+                print(f"{i} : {info[i]}")
+            print("Please note down your account number")
+
+            Bank.data.append(info)
+            Bank.update()
+
+
+
+        
 
 user = Bank()
 
