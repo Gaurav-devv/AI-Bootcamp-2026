@@ -24,6 +24,8 @@ class Bank:
         with open(Bank.database,'w') as fs:
             fs.write(json.dumps(Bank.data))
 
+    @staticmethod
+
     
 
 
