@@ -19,12 +19,13 @@ class Bank:
         print(f"an exception  occured as {err}")
 
 
-    @staticmethod
-    def update():
-        with open(Bank.database,'w') as fs:
+    @classmethod
+    def __update(cls):
+        with open(cls.database,'w') as fs:
             fs.write(json.dumps(Bank.data))
 
-    @staticmethod
+    @classmethod
+    def __accountgenerate(cls):
 
     
 
@@ -48,7 +49,7 @@ class Bank:
             print("Please note down your account number")
 
             Bank.data.append(info)
-            Bank.update()
+            Bank.__update()
 
 
 
