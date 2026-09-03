@@ -21,6 +21,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 ## 📚 Topics Covered
 
 ### 1. NumPy Introduction
+
 - What is NumPy?
 - Why NumPy?
 - NumPy vs Python Lists
@@ -28,6 +29,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - Importing NumPy
 
 ### 2. NumPy Arrays
+
 - Creating NumPy arrays
 - `np.array()`
 - One-dimensional arrays
@@ -37,6 +39,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - `dtype`
 
 ### 3. Array Properties
+
 - `ndim`
 - `shape`
 - `size`
@@ -44,6 +47,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - `itemsize`
 
 ### 4. Creating Arrays
+
 - `np.zeros()`
 - `np.ones()`
 - `np.empty()`
@@ -53,6 +57,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - Identity matrices
 
 ### 5. Array Indexing
+
 - Accessing elements
 - Positive indexing
 - Negative indexing
@@ -60,6 +65,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - Multi-dimensional indexing
 
 ### 6. Array Slicing
+
 - Basic slicing
 - Start, stop, step
 - Row slicing
@@ -67,6 +73,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - 2D slicing
 
 ### 7. Array Manipulation
+
 - Reshaping arrays
 - `reshape()`
 - Flattening arrays
@@ -76,6 +83,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - `T`
 
 ### 8. Mathematical Operations
+
 - Addition
 - Subtraction
 - Multiplication
@@ -85,6 +93,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - Scalar operations
 
 ### 9. NumPy Functions
+
 - `np.sum()`
 - `np.min()`
 - `np.max()`
@@ -97,6 +106,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - `np.round()`
 
 ### 10. Axis in NumPy
+
 - Understanding `axis`
 - `axis=0`
 - `axis=1`
@@ -104,23 +114,27 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - Operations across columns
 
 ### 11. Array Comparison
+
 - Comparison operators
 - Boolean arrays
 - Conditional filtering
 - `np.where()`
 
 ### 12. Array Concatenation
+
 - `np.concatenate()`
 - `np.vstack()`
 - `np.hstack()`
 - Stacking arrays
 
 ### 13. Copying Arrays
+
 - Assignment vs copying
 - `copy()`
 - View vs copy
 
 ### 14. Random Numbers
+
 - `np.random`
 - Random integers
 - Random floats
@@ -129,6 +143,7 @@ The goal of this module is to understand NumPy from the fundamentals and build a
 - `np.random.seed()`
 
 ### 15. Practical Applications
+
 - Working with numerical datasets
 - Statistical calculations
 - Matrix operations
@@ -146,6 +161,7 @@ A NumPy array is a collection of elements of the same data type stored efficient
 ```python
 import numpy as np
 
-arr = np.array([10, 20, 30, 40])
+arr = np.array([10, 20, 30, 40,50])
 
 print(arr)
+```
